@@ -1,0 +1,10 @@
+/Users/codecadet/workspace/webbootcamp/src/main/java/org/academiadecodigo/bootcamp/model/Bootcamp.java
+/Users/codecadet/workspace/webbootcamp/src/main/java/org/academiadecodigo/bootcamp/controller/BootcampListController.java
+/Users/codecadet/workspace/webbootcamp/src/main/java/org/academiadecodigo/bootcamp/controller/UserListController.java
+/Users/codecadet/workspace/webbootcamp/src/main/java/org/academiadecodigo/bootcamp/controller/LoginController.java
+/Users/codecadet/workspace/webbootcamp/src/main/java/org/academiadecodigo/bootcamp/model/User.java
+/Users/codecadet/workspace/webbootcamp/src/main/java/org/academiadecodigo/bootcamp/service/UserService.java
+/Users/codecadet/workspace/webbootcamp/src/main/java/org/academiadecodigo/bootcamp/app/AppMain.java
+/Users/codecadet/workspace/webbootcamp/src/main/java/org/academiadecodigo/bootcamp/service/BootcampService.java
+/Users/codecadet/workspace/webbootcamp/src/main/java/org/academiadecodigo/bootcamp/service/MockUserService.java
+/Users/codecadet/workspace/webbootcamp/src/main/java/org/academiadecodigo/bootcamp/service/MockBootcampService.java
