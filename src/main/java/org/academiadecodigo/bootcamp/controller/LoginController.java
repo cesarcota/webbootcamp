@@ -12,8 +12,10 @@ import java.io.IOException;
 
 
 public class LoginController extends HttpServlet{
+
+
     private UserService userService;
-    RequestDispatcher loginDispatcher;
+    private RequestDispatcher loginDispatcher;
 
     @Override
     public void init() throws ServletException {
@@ -23,10 +25,7 @@ public class LoginController extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-
         loginDispatcher.forward(req,resp);
-
     }
 
     @Override

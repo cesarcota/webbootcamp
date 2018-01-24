@@ -13,12 +13,11 @@ import java.io.IOException;
 
 public class UserListController extends HttpServlet {
 
-    private UserService userService;
 
     @Override
     public void init() throws ServletException {
 
-        userService = (UserService) getServletContext().getAttribute(UserService.class.getSimpleName());
+       UserService userService = (UserService) getServletContext().getAttribute(UserService.class.getSimpleName());
         getServletContext().setAttribute("userList", userService.findAll());
     }
 

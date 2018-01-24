@@ -10,7 +10,6 @@ import org.academiadecodigo.bootcamp.service.UserService;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import java.util.Date;
 
 public class AppMain implements ServletContextListener {
     @Override
@@ -22,6 +21,7 @@ public class AppMain implements ServletContextListener {
 
         ctx.setAttribute(UserService.class.getSimpleName(), userService);
         ctx.setAttribute(BootcampService.class.getSimpleName(), bootcampService);
+
 
 
         userService.addUser(new User(1, "cesar", "cesar", "cesar@academiadecodigo.com"));

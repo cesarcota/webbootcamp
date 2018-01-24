@@ -11,8 +11,6 @@ public class MockUserService implements UserService {
     Map<String, User> userList = new HashMap<>();
     @Override
     public void addUser(User user) {
-
-
         userList.put(user.getUsername(), user);
     }
 
