@@ -13,7 +13,7 @@
 <body>
 <%@ include file="/WEB-INF/header.jsp" %>
 
-<h2 class="listof">List of Users</h2>
+<h2 class="listof">List of Bootcamps</h2>
 
 <table class="table table-hover">
     <thead class="thead-dark">
