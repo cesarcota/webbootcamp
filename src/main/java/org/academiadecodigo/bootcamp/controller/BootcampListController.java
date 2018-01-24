@@ -17,7 +17,6 @@ public class BootcampListController extends HttpServlet {
     public void init() throws ServletException {
 
         bootcamService = (BootcampService) getServletContext().getAttribute(BootcampService.class.getSimpleName());
-        getServletContext().setAttribute("bootcampList", bootcamService.findAll());
     }
 
     @Override

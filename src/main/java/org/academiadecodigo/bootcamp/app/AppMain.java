@@ -13,8 +13,6 @@ import javax.servlet.ServletContextListener;
 
 public class AppMain implements ServletContextListener {
 
-
-
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         ServletContext ctx = sce.getServletContext();
@@ -25,16 +23,16 @@ public class AppMain implements ServletContextListener {
         ctx.setAttribute(UserService.class.getSimpleName(), userService);
         ctx.setAttribute(BootcampService.class.getSimpleName(), bootcampService);
 
-
-
         userService.addUser(new User(1, "cesar", "cesar", "cesar@academiadecodigo.com"));
         userService.addUser(new User(2, "davide", "davide", "davide@academiadecodigo.com"));
         userService.addUser(new User(3, "sofia", "sofia", "sofia@academiadecodigo.com"));
         userService.addUser(new User(4, "luis", "luis", "luis@academiadecodigo.com"));
 
-
         bootcampService.addBootcamp(new Bootcamp(1, "Terceira"));
         bootcampService.addBootcamp(new Bootcamp(2, "Lisboa"));
+
+        ctx.setAttribute("userList", userService.findAll());
+        ctx.setAttribute("bootcampList", bootcampService.findAll());
 
     }
 

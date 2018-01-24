@@ -1,7 +1,9 @@
 
 
 
-<h2>Welcome ${user.username}</h2>
+<div class="listHeader">
+    <a href="user-list" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Users</a>
+    <a href="bootcamp-list" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Bootcamps</a>
+<h2 class="header">Welcome ${user.username}</h2>
 
-<a href="user-list" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Users</a>
-<a href="bootcamp-list" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Bootcamps</a>
+</div>

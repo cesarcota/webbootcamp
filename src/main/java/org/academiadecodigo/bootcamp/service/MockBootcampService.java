@@ -22,7 +22,7 @@ public class MockBootcampService implements BootcampService{
 
     @Override
     public List<Bootcamp> findAll() {
-        
+
         return new LinkedList<>(bootcampList.values());
     }
 

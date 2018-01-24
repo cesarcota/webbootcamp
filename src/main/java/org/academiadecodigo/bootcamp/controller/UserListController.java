@@ -1,7 +1,5 @@
 package org.academiadecodigo.bootcamp.controller;
 
-import org.academiadecodigo.bootcamp.model.Bootcamp;
-import org.academiadecodigo.bootcamp.model.User;
 import org.academiadecodigo.bootcamp.service.UserService;
 
 import javax.servlet.RequestDispatcher;
@@ -18,7 +16,6 @@ public class UserListController extends HttpServlet {
     public void init() throws ServletException {
 
        UserService userService = (UserService) getServletContext().getAttribute(UserService.class.getSimpleName());
-        getServletContext().setAttribute("userList", userService.findAll());
     }
 
     @Override
